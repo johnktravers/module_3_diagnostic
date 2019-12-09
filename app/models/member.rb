@@ -3,9 +3,9 @@ class Member
 
   def initialize(member_data)
     @name = member_data[:name]
-    @role = member_data[:role]
+    @role = member_data[:role] || 'Unknown'
     @house = member_data[:house]
-    @patronus = member_data[:patronus]
+    @patronus = member_data[:patronus] || 'Unknown'
   end
 
 end
