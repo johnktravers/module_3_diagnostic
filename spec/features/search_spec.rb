@@ -24,7 +24,7 @@ RSpec.describe 'Order of the Phoenix Member Search' do
   end
 
   it 'shows 1 member and his info if Slytherin is selected' do
-    VCR.use_cassette('slyhterin_members') do
+    VCR.use_cassette('slytherin_members') do
       visit root_path
 
       select 'Slytherin', from: :house
