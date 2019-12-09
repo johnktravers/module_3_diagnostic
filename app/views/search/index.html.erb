@@ -1,0 +1,11 @@
+<h1><%= @search_facade.member_count %> Members in House <%= @search_facade.house %></h1>
+
+<% @search_facade.members.each do |member| %>
+  <section class="member">
+    <h3 class="name"><%= member.name %></h3>
+    <p class="role">Role: <%= member.role %></p>
+    <p class="house">House: <%= member.house %></p>
+    <p class="patronus">Patronus: <%= member.patronus %></p>
+  </section>
+  <br>
+<% end %>
