@@ -1,0 +1,60 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://www.potterapi.com/v1/characters?house=Slytherin&key=$2a$10$bGzgXmtfdl6SPhjdbSJBP.Po5fyHpSr3lFZ9gyK8rz.txcfV1v.46&orderOfThePhoenix=true
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.17.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 09 Dec 2019 17:53:48 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dac7fbc56d21affe9251b55be2092cc741575914028; expires=Wed, 08-Jan-20
+        17:53:48 GMT; path=/; domain=.potterapi.com; HttpOnly; Secure
+      X-Powered-By:
+      - Express
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Headers:
+      - Origin, X-Requested-With, Content-Type, Content-length, Accept, Authorization
+      Access-Control-Allow-Methods:
+      - POST, GET, PUT, DELETE, OPTIONS
+      Etag:
+      - W/"142-WxDu4/Q7xe74Ry57RFpYRqrP+Z0"
+      Via:
+      - 1.1 vegur
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 5428d7334a9fc7b9-DEN
+    body:
+      encoding: ASCII-8BIT
+      string: '[{"_id":"5a1233bc0f5ae10021650d97","name":"Severus Snape","role":"Professor,
+        Potions","house":"Slytherin","school":"Hogwarts School of Witchcraft and Wizardry","patronus":"doe","__v":0,"ministryOfMagic":false,"orderOfThePhoenix":true,"dumbledoresArmy":false,"deathEater":true,"bloodStatus":"half-blood","species":"human"}]'
+    http_version: 
+  recorded_at: Mon, 09 Dec 2019 17:53:40 GMT
+recorded_with: VCR 5.0.0
