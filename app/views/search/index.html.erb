@@ -1,4 +1,4 @@
-<h1><%= @search_facade.member_count %> Members in House <%= @search_facade.house %></h1>
+<h1><%= "#{@search_facade.member_count} #{@search_facade.plural_member} in House #{@search_facade.house}" %></h1>
 
 <% @search_facade.members.each do |member| %>
   <section class="member">

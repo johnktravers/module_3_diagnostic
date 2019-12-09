@@ -14,6 +14,10 @@ class SearchFacade
     members.length
   end
 
+  def plural_member
+    'Member'.pluralize(member_count)
+  end
+
 
   private
 
